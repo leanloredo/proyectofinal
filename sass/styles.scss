@@ -1,0 +1,220 @@
+// Partials //
+@import "vars";
+@import "footer";
+
+//Maps//
+$colores:(
+    color1:white,
+    color2:rgb(19, 19, 19),
+    color3:rgb(33, 37, 41),
+    color4:rgb(47, 60, 143)
+);
+
+// Mixins //
+@mixin bg--color($bgc, $font) {
+    background-color: $bgc;
+    height: auto;
+    width: 100%;
+    font-family: $font;
+    text-align: center;
+    padding-bottom: 5%;
+}
+@mixin bg--foto {
+    background-size: cover;
+    height: 25%;
+    width: 50%;
+}
+
+/* Estilos de: Home */    
+.header {
+    font-family: $font1;
+}
+.section1 {
+    background-image: url(../img/pelota_arco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    color: map-get($colores, color1);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    &--titulo {
+        font-family: $font2;
+        font-size: 200%;
+    }
+    &--slogan {
+        font-family: $font3;
+        font-size: 150%;
+    }
+}
+@media (min-width: 600px) {
+    .section1--titulo {
+        font-size: 400%;
+    }
+    .section1--slogan {
+        font-size: 250%
+    }
+}
+.section2 {
+    @include bg--color(map-get($colores,color2), $font1);
+    padding: 1,5rem;
+    color: map-get($colores, color1);
+    display: flex;
+    flex-flow:column;
+    &__titulo {
+        text-align: center;
+        font-size: 1,5rem;
+        font-family: $font1;
+        margin: 3rem;
+    }
+    &__fotos {
+        width: 80%;
+    }
+    &__wsp {
+        background-color: rgb(110, 197, 107);
+        width: 30%;
+        padding: 10px;
+        text-decoration: $textLink;
+        border-radius: 10px;
+        color: map-get($colores, color1);
+    }
+}
+
+/* Estilos de: Productos */
+.section3 {
+    @include bg--color(map-get($colores,color2),$font1);
+    color: map-get($colores, color1);
+    &__titulo1 {
+        font-family: $font4;
+        font-size: 220%;
+        padding-top: 5%;
+        text-align: center;
+    }
+    &__titulo2 {
+        font-size: 125%;
+        padding-top: 5%;
+    }
+    &__fotos {
+        width: 25vw;
+        min-width: 125px;
+        margin: 5%;
+    }
+}
+@media (min-width: 600px) {
+    .section3__titulo2 {
+        font-size: 160%;
+    }
+}
+
+/* Estilos de: Nosotros */
+.section5 {
+    @include bg--color(map-get($colores, color2), $font5);
+    color: map-get($colores, color1);
+    &__imagen {
+        width: 40vw;
+        min-width: 250px;
+        margin: 5%;
+    }
+    &__texto {
+        padding-bottom: 10%;
+        font-size: 90%;
+    }
+}
+
+@media (min-width: 760px) {
+    .section5__texto {
+        font-size: 125%;
+        padding-top: 5%;
+    }
+}
+@media (min-width: 950px) {
+    .section5__texto {
+        font-size: 150%;
+        padding-top: 7%;
+    }
+}
+@media (min-width: 1090px) {
+    .section5__texto {
+        font-size: 150%;
+        padding-top: 10%;
+    }
+}
+.paddingt10 {
+    padding-top: 5%;
+}
+
+/* Estilos: Preg. Frec. */
+.section6 {
+    @include bg--color(map-get($colores,color2),$font5);
+    text-align: left;
+    color: map-get($colores, color1);
+    padding-left: 2%;
+    &__preguntas {
+        color: rgb(202, 149, 51);
+        font-family: $font2;
+        padding-top: 5%;
+        font-size: 150%;
+    }
+    &__respuestas {
+        font-size: 120%;
+    }
+}
+@media (min-width: 600px){
+    .section6__preguntas{
+        font-size: 250%;
+        text-align: left;
+    }
+    .section6__respuestas{
+        font-size: 170%;
+    }
+}
+
+/* Estilos: Contacto */
+.section4 {
+    @include bg--color(map-get($colores, color2), $font5);
+    color: map-get($colores, color1);
+    &__subtitulo {
+        margin-top: 8%;
+        padding-bottom: 10%;
+        font-size: 90%;
+    }
+    &__col {
+        @include bg--color(map-get($colores,color3),$font5);
+        border-radius: 3em;
+        margin-top: 0%;
+        padding-top: 5%;
+        margin-bottom: 10%;
+    }
+}
+.controls {
+    margin:6px;
+    @include bg--color(map-get($colores,color4),$font4 );
+    width: 90%;
+    border:1px solid rgb(255, 255, 255);
+    color: map-get($colores, color1);
+    text-align: center;
+    padding-top: 5%;
+    border-radius:1em;
+}
+.botones {
+    @include bg--color(map-get($colores, color1),$font3);
+    width: 15%;
+    height: 10px;
+    border-radius: 1em;
+    min-height: 30px;
+}
+@media (min-width: 500px) {
+    .section4__subtitulo {
+        font-size: 160%;
+    }
+    .controls {
+        font-size: 170%;
+    }
+    .botones {
+        font-size: 160%;
+    }
+}
+

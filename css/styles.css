@@ -1,0 +1,331 @@
+/* Estilos de: Footer */
+.footer {
+  font-family: 'Roboto Slab', serif;
+  background-color: #212529;
+  height: auto;
+  padding: 2%;
+  width: 100%;
+  font-size: 100%;
+  margin-bottom: 0;
+}
+
+.footer--lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.footer--lista2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.footer--faq {
+  display: inline;
+  text-decoration: none;
+  color: white;
+}
+
+.footer--redes1 {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 15%;
+  left: 150%;
+  min-width: 30px;
+}
+
+.footer--redes2 {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 15%;
+  left: 75%;
+  min-width: 30px;
+}
+
+/* Estilos de: Home */
+.header {
+  font-family: "Readex Pro", sans-serif;
+}
+
+.section1 {
+  background-image: url(../img/pelota_arco.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section1--titulo {
+  font-family: "Secular One", sans-serif;
+  font-size: 200%;
+}
+
+.section1--slogan {
+  font-family: "Baloo Bhaijaan 2";
+  font-size: 150%;
+}
+
+@media (min-width: 600px) {
+  .section1--titulo {
+    font-size: 400%;
+  }
+  .section1--slogan {
+    font-size: 250%;
+  }
+}
+
+.section2 {
+  background-color: #131313;
+  height: auto;
+  width: 100%;
+  font-family: "Readex Pro", sans-serif;
+  text-align: center;
+  padding-bottom: 5%;
+  padding: 1,5rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.section2__titulo {
+  text-align: center;
+  font-size: 1,5rem;
+  font-family: "Readex Pro", sans-serif;
+  margin: 3rem;
+}
+
+.section2__fotos {
+  width: 80%;
+}
+
+.section2__wsp {
+  background-color: #6ec56b;
+  width: 30%;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Estilos de: Productos */
+.section3 {
+  background-color: #131313;
+  height: auto;
+  width: 100%;
+  font-family: "Readex Pro", sans-serif;
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.section3__titulo1 {
+  font-family: "Bakbak One";
+  font-size: 220%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.section3__titulo2 {
+  font-size: 125%;
+  padding-top: 5%;
+}
+
+.section3__fotos {
+  width: 25vw;
+  min-width: 125px;
+  margin: 5%;
+}
+
+@media (min-width: 600px) {
+  .section3__titulo2 {
+    font-size: 160%;
+  }
+}
+
+/* Estilos de: Nosotros */
+.section5 {
+  background-color: #131313;
+  height: auto;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.section5__imagen {
+  width: 40vw;
+  min-width: 250px;
+  margin: 5%;
+}
+
+.section5__texto {
+  padding-bottom: 10%;
+  font-size: 90%;
+}
+
+@media (min-width: 760px) {
+  .section5__texto {
+    font-size: 125%;
+    padding-top: 5%;
+  }
+}
+
+@media (min-width: 950px) {
+  .section5__texto {
+    font-size: 150%;
+    padding-top: 7%;
+  }
+}
+
+@media (min-width: 1090px) {
+  .section5__texto {
+    font-size: 150%;
+    padding-top: 10%;
+  }
+}
+
+.paddingt10 {
+  padding-top: 5%;
+}
+
+/* Estilos: Preg. Frec. */
+.section6 {
+  background-color: #131313;
+  height: auto;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-bottom: 5%;
+  text-align: left;
+  color: white;
+  padding-left: 2%;
+}
+
+.section6__preguntas {
+  color: #ca9533;
+  font-family: "Secular One", sans-serif;
+  padding-top: 5%;
+  font-size: 150%;
+}
+
+.section6__respuestas {
+  font-size: 120%;
+}
+
+@media (min-width: 600px) {
+  .section6__preguntas {
+    font-size: 250%;
+    text-align: left;
+  }
+  .section6__respuestas {
+    font-size: 170%;
+  }
+}
+
+/* Estilos: Contacto */
+.section4 {
+  background-color: #131313;
+  height: auto;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.section4__subtitulo {
+  margin-top: 8%;
+  padding-bottom: 10%;
+  font-size: 90%;
+}
+
+.section4__col {
+  background-color: #212529;
+  height: auto;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-bottom: 5%;
+  border-radius: 3em;
+  margin-top: 0%;
+  padding-top: 5%;
+  margin-bottom: 10%;
+}
+
+.controls {
+  margin: 6px;
+  background-color: #2f3c8f;
+  height: auto;
+  width: 100%;
+  font-family: "Bakbak One";
+  text-align: center;
+  padding-bottom: 5%;
+  width: 90%;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+  border-radius: 1em;
+}
+
+.botones {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  font-family: "Baloo Bhaijaan 2";
+  text-align: center;
+  padding-bottom: 5%;
+  width: 15%;
+  height: 10px;
+  border-radius: 1em;
+  min-height: 30px;
+}
+
+@media (min-width: 500px) {
+  .section4__subtitulo {
+    font-size: 160%;
+  }
+  .controls {
+    font-size: 170%;
+  }
+  .botones {
+    font-size: 160%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
